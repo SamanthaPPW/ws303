@@ -1,0 +1,22 @@
+CREATE TABLE Abonnements (
+    -- Clé primaire pour identifier chaque abonnement de manière unique
+    abonnement_id INT PRIMARY KEY AUTO_INCREMENT,
+    
+    -- Nom de l’abonnement (ex: "Pass Découverte")
+    abonnement_nom VARCHAR(255) NOT NULL UNIQUE, 
+    
+    -- Région concernée (ex: "Île-de-France", "National")
+    abonnement_region VARCHAR(100),
+    
+    -- Coût de l’abonnement (VARCHAR pour la , sous forme de --- € )
+    abonnement_prix VARCHAR(5),
+    
+    -- Durée de validité en mois (1 pour mensuel, 12 pour annuel, etc.)
+    abonnement_duree_mois INT NOT NULL,
+    
+    -- Type d’abonnement (ex: "Jeune", "Senior", "Étudiant")
+    abonnement_type VARCHAR(100),
+    
+    -- Site officiel / lien d’information
+    abonnement_lien VARCHAR(512)
+);

@@ -13,19 +13,19 @@
 </head>
 
 <body>
-  <header>
-    <img src="images/logo.svg" alt="Logo SEM" class="logo">
+    <header>
+      <img src="images/logo.svg" alt="Logo SEM" class="logo">
 
-    <nav>
-      <ul>
-        <li><a href="index.php" class="actuel">Accueil</a></li>
-        <li><a href="explorer.php">Explorer</a></li>
-        <li><a href="apropos.php">A propos</a></li>
-        <li><a href="contact.php">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header-spacer"></div>
-  </header>
+      <nav>
+        <ul>
+          <li><a href="index.php" class="actuel">Accueil</a></li>
+          <li><a href="explorer.php">Explorer</a></li>
+          <li><a href="apropos.php">A propos</a></li>
+          <li><a href="contact.php">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-spacer"></div>
+    </header>
   <img src="images/sem-train.png" alt="Image de train, banière du site" class="train-image">
 
   <section class="intro">
