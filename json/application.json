@@ -1,0 +1,1498 @@
+{
+  "total_count": 37,
+  "results": [
+    {
+      "visibility": "domain",
+      "dataset_id": "gares-de-voyageurs",
+      "dataset_uid": "da_op82s6",
+      "has_records": true,
+      "features": [
+        "analyze",
+        "geo"
+      ],
+      "attachments": [],
+      "alternative_exports": [],
+      "data_visible": true,
+      "fields": [
+        {
+          "name": "nom",
+          "description": null,
+          "annotations": {
+            "facet": true,
+            "sortable": true,
+            "facetsort": "alphanum"
+          },
+          "label": "Nom",
+          "type": "text"
+        },
+        {
+          "name": "libellecourt",
+          "description": null,
+          "annotations": {},
+          "label": "Trigramme",
+          "type": "text"
+        },
+        {
+          "name": "segment_drg",
+          "description": null,
+          "annotations": {
+            "facet": true,
+            "sortable": true,
+            "disjunctive": true
+          },
+          "label": "Segment(s) DRG",
+          "type": "text"
+        },
+        {
+          "name": "position_geographique",
+          "description": null,
+          "annotations": {},
+          "label": "Position géographique",
+          "type": "geo_point_2d"
+        },
+        {
+          "name": "codeinsee",
+          "description": null,
+          "annotations": {
+            "facet": true
+          },
+          "label": "Code commune",
+          "type": "text"
+        },
+        {
+          "name": "codes_uic",
+          "description": null,
+          "annotations": {},
+          "label": "Code(s) UIC",
+          "type": "text"
+        }
+      ],
+      "metas": {
+        "dcat": {
+          "created": null,
+          "issued": "2024-02-21",
+          "creator": "SNCF Gares&Connexions",
+          "contributor": "SNCF Gares&Connexions",
+          "contact_name": null,
+          "contact_email": null,
+          "accrualperiodicity": "daily",
+          "spatial": null,
+          "temporal": null,
+          "granularity": null,
+          "dataquality": null,
+          "publisher_type": null,
+          "conforms_to": null,
+          "temporal_coverage_start": null,
+          "temporal_coverage_end": null,
+          "accessRights": null,
+          "relation": null
+        },
+        "default": {
+          "title": "Gares de voyageurs",
+          "description": "<i><b>Une gare</b> est un ensemble de biens fonciers, pour lequel SNCF G&amp;C est affectataire en droit réel de la propriété de l'Etat ou d'un propriétaire tiers, ayant servi, servant ou qui servira à l'interface entre la ville et le train.</i><p></p>\n\n<p class=\"MsoNormal\" style=\"margin-bottom:0cm;line-height:normal\"><span style='font-family:\"Calibri\",sans-serif;mso-fareast-font-family:\"Times New Roman\";\nmso-fareast-language:FR'>Ce jeu de données représente l'ensemble des gares\nrépondant à la définition ci-dessus.</span></p><p class=\"MsoNormal\" style=\"margin-bottom:0cm;line-height:normal\"><span style='font-family:\"Calibri\",sans-serif;mso-fareast-font-family:\"Times New Roman\";\nmso-fareast-language:FR'><br></span></p><p class=\"MsoNormal\" style=\"margin-bottom:0cm;line-height:normal\"><span style='font-family:\"Calibri\",sans-serif;mso-fareast-font-family:\"Times New Roman\";\nmso-fareast-language:FR'>Les données affichées sont les suivantes :</span></p><ul><li style=\"margin-bottom: 0cm; line-height: normal;\"><font face=\"Calibri, sans-serif\"><span style=\"font-size: 14px;\"><b>Nom </b>: Nom de la gare</span></font></li><li style=\"margin-bottom: 0cm; line-height: normal;\"><font face=\"Calibri, sans-serif\"><span style=\"font-size: 14px;\"><b>Trigramme</b> : Codification de la gare, chaque gare possède un trigramme unique</span></font></li><li style=\"margin-bottom: 0cm; line-height: normal;\"><font face=\"Calibri, sans-serif\"><span style=\"font-size: 14px;\"><b>Segment(s) DRG</b> : segment(s) de la gare associé au document de référence des gares</span></font></li><li><font face=\"Calibri, sans-serif\"><b>Position géographique</b> : coordonnées géographiques de la gare</font></li><li style=\"margin-bottom: 0cm; line-height: normal;\"><font face=\"Calibri, sans-serif\"><b>Code Commune</b> : Le code INSEE de chaque commune est constitué de 5 chiffres, les 2 premiers sont le numéro du département (codé sur 2 chiffres) et les 3 autres chiffres sont un code donné à la commune (codée sur 3 chiffres).</font></li><li style=\"margin-bottom: 0cm; line-height: normal;\"><font face=\"Calibri, sans-serif\"><b>Codes(s)\nUIC</b> : liste des codes UIC rattachés à la gare <br></font></li></ul><div><font face=\"Calibri, sans-serif\"><br></font></div>",
+          "theme": [
+            "Gares"
+          ],
+          "keyword": [
+            "Gare de voyageurs",
+            "Gares de voyageurs",
+            "Gares",
+            "gare",
+            "Géolocalisation",
+            "Code UIC"
+          ],
+          "license": "Open Data Commons Open Database License (ODbL)",
+          "license_url": "https://data.sncf.com/pages/licence",
+          "language": "fr",
+          "metadata_languages": [
+            "fr"
+          ],
+          "timezone": null,
+          "modified": "2025-10-20T09:43:06+00:00",
+          "modified_updates_on_metadata_change": false,
+          "modified_updates_on_data_change": true,
+          "data_processed": "2025-10-20T09:43:06+00:00",
+          "metadata_processed": "2025-10-20T09:43:06.202000+00:00",
+          "geographic_reference": [
+            "world_fr"
+          ],
+          "geographic_reference_auto": false,
+          "territory": [
+            "France"
+          ],
+          "geometry_types": [
+            "Point"
+          ],
+          "bbox": {
+            "type": "Feature",
+            "geometry": {
+              "coordinates": [
+                [
+                  [
+                    8.182681677863002,
+                    51.030469997785985
+                  ],
+                  [
+                    -4.478903068229556,
+                    51.030469997785985
+                  ],
+                  [
+                    -4.478903068229556,
+                    42.432406889274716
+                  ],
+                  [
+                    8.182681677863002,
+                    42.432406889274716
+                  ],
+                  [
+                    8.182681677863002,
+                    51.030469997785985
+                  ]
+                ]
+              ],
+              "type": "Polygon"
+            },
+            "properties": {}
+          },
+          "publisher": "Gares & Connexions",
+          "references": null,
+          "records_count": 2769,
+          "attributions": null,
+          "source_domain": null,
+          "source_domain_title": null,
+          "source_domain_address": null,
+          "source_dataset": null,
+          "shared_catalog": null,
+          "federated": false,
+          "parent_domain": null,
+          "update_frequency": null
+        },
+        "custom": {
+          "cycle": null,
+          "periodicity": "Quotidienne",
+          "test-meta": null
+        }
+      }
+    },
+    {
+      "visibility": "domain",
+      "dataset_id": "frequentation-gares",
+      "dataset_uid": "da_z4kzxe",
+      "has_records": true,
+      "features": [
+        "analyze"
+      ],
+      "attachments": [],
+      "alternative_exports": [],
+      "data_visible": true,
+      "fields": [
+        {
+          "name": "nom_gare",
+          "description": "",
+          "annotations": {
+            "sortable": true,
+            "facet": true,
+            "disjunctive": true
+          },
+          "label": "Nom de la gare",
+          "type": "text"
+        },
+        {
+          "name": "code_uic_complet",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Code UIC",
+          "type": "text"
+        },
+        {
+          "name": "code_postal",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count",
+            "facet": true,
+            "disjunctive": true
+          },
+          "label": "Code postal",
+          "type": "text"
+        },
+        {
+          "name": "direction_regionale_gares",
+          "description": null,
+          "annotations": {},
+          "label": "Direction Régionale Gares",
+          "type": "text"
+        },
+        {
+          "name": "segmentation_drg",
+          "description": null,
+          "annotations": {
+            "facet": true
+          },
+          "label": "Segmentation DRG",
+          "type": "text"
+        },
+        {
+          "name": "segmentation_marketing",
+          "description": null,
+          "annotations": {},
+          "label": "Segmentation Marketing",
+          "type": "text"
+        },
+        {
+          "name": "non_voyageurs",
+          "description": null,
+          "annotations": {},
+          "label": "% Non Voyageurs",
+          "type": "double"
+        },
+        {
+          "name": "total_voyageurs_2024",
+          "description": null,
+          "annotations": {},
+          "label": "Total Voyageurs 2024",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_non_voyageurs_2024",
+          "description": null,
+          "annotations": {},
+          "label": "Total Voyageurs + Non voyageurs 2024",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_2023",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs 2023",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_non_voyageurs_2023",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs + Non voyageurs 2023",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_2022",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs 2022",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_non_voyageurs_2022",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs + Non voyageurs 2022",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_2021",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs 2021",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_non_voyageurs_2021",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs + Non voyageurs 2021",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_2020",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs 2020",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_non_voyageurs_2020",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs + Non voyageurs 2020",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_2019",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs 2019",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_non_voyageurs_2019",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs + Non voyageurs 2019",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_2018",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs 2018",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_non_voyageurs_2018",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs + Non voyageurs 2018",
+          "type": "int"
+        },
+        {
+          "name": "totalvoyageurs2017",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs 2017",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_non_voyageurs_2017",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs + Non voyageurs 2017",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_2016",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs 2016",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_non_voyageurs_2016",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs + Non voyageurs 2016",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_2015",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs 2015",
+          "type": "int"
+        },
+        {
+          "name": "total_voyageurs_non_voyageurs_2015",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Total Voyageurs + Non voyageurs 2015",
+          "type": "int"
+        }
+      ],
+      "metas": {
+        "dcat": {
+          "created": "2015-12-08",
+          "issued": "2015-12-08",
+          "creator": "Gares & Connexions",
+          "contributor": null,
+          "contact_name": null,
+          "contact_email": null,
+          "accrualperiodicity": null,
+          "spatial": null,
+          "temporal": null,
+          "granularity": "Gares SNCF",
+          "dataquality": null,
+          "publisher_type": null,
+          "conforms_to": null,
+          "temporal_coverage_start": null,
+          "temporal_coverage_end": null,
+          "accessRights": null,
+          "relation": null
+        },
+        "default": {
+          "title": "Fréquentation en gares",
+          "description": "<p class=\"MsoNormal\">Ce jeu de données représente la fréquentation annuelle de l’ensemble des 3000 gares voyageurs de 2015 à 2024.</p><p class=\"MsoNormal\">Ces informations sont issues d’une part, des données de billetterie pour le trafic national et régional hors Ile-de-France et d’autre part, d’une extrapolation pour le trafic régional Ile-de-France à partir des comptages effectués tous les 3 à 4 ans et publiés par ailleurs en Open Data.</p><p class=\"MsoNormal\">A noter, pour les gares n’ayant pas bénéficié de comptage du trafic régional Ile-de-France depuis 2020 en raison de la crise sanitaire, la fréquentation est calculée en relatif par rapport aux évolutions des validations en gare.</p><p class=\"MsoNormal\">Une estimation de la proportion de non voyageurs est réalisée à partir des enquêtes en gare. En l’absence d’enquête, un taux par défaut est défini (20% pour les gares a et b hors Ile-de-France et 0% pour les gares b Ile-de-France et c).</p><p class=\"MsoNormal\">La méthodologie de calcul se précise année après année avec une reprise de l'historique pouvant expliquer des variations dans les données publiées d'une année sur l'autre. Pour toute question, vous pouvez nous l'adresser au travers du formulaire de contact du portail Open Data.</p><p class=\"MsoNormal\">Ces données sont mises à jour annuellement à l'été A+1.</p>",
+          "theme": [
+            "Gares"
+          ],
+          "keyword": [
+            "Fréquentation",
+            "Gare de voyageurs",
+            "Gares"
+          ],
+          "license": "Open Database License (ODbL)",
+          "license_url": "https://data.sncf.com/pages/licence",
+          "language": "fr",
+          "metadata_languages": [
+            "fr"
+          ],
+          "timezone": null,
+          "modified": "2024-09-06T11:40:39+00:00",
+          "modified_updates_on_metadata_change": false,
+          "modified_updates_on_data_change": false,
+          "data_processed": "2025-07-03T14:13:33+00:00",
+          "metadata_processed": "2025-07-03T14:13:33.993000+00:00",
+          "geographic_reference": [
+            "world_fr"
+          ],
+          "geographic_reference_auto": true,
+          "territory": [
+            "France"
+          ],
+          "geometry_types": null,
+          "bbox": null,
+          "publisher": "Gares & Connexions",
+          "references": null,
+          "records_count": 3021,
+          "attributions": null,
+          "source_domain": null,
+          "source_domain_title": null,
+          "source_domain_address": null,
+          "source_dataset": null,
+          "shared_catalog": null,
+          "federated": false,
+          "parent_domain": null,
+          "update_frequency": null
+        },
+        "custom": {
+          "cycle": null,
+          "periodicity": "Annuelle",
+          "test-meta": null
+        }
+      }
+    },
+    {
+      "visibility": "domain",
+      "dataset_id": "barometre-client",
+      "dataset_uid": "da_5bm9f1",
+      "has_records": false,
+      "features": [],
+      "attachments": [
+        {
+          "id": "bsc_mars_2019_xlsx",
+          "title": "BSC mars 2019.xlsx",
+          "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "url": "https://ressources.data.sncf.com/api/explore/v2.1/catalog/datasets/barometre-client/attachments/bsc_mars_2019_xlsx"
+        },
+        {
+          "id": "bsc_sept_2019_xlsx",
+          "title": "BSC sept 2019.xlsx",
+          "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "url": "https://ressources.data.sncf.com/api/explore/v2.1/catalog/datasets/barometre-client/attachments/bsc_sept_2019_xlsx"
+        },
+        {
+          "id": "bsc_sept_2020_xlsx",
+          "title": "BSC sept 2020.xlsx",
+          "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "url": "https://ressources.data.sncf.com/api/explore/v2.1/catalog/datasets/barometre-client/attachments/bsc_sept_2020_xlsx"
+        },
+        {
+          "id": "bsc_mars_2021_xlsx",
+          "title": "BSC mars 2021.xlsx",
+          "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "url": "https://ressources.data.sncf.com/api/explore/v2.1/catalog/datasets/barometre-client/attachments/bsc_mars_2021_xlsx"
+        },
+        {
+          "id": "bsc_sept_2021_xlsx",
+          "title": "BSC sept 2021.xlsx",
+          "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "url": "https://ressources.data.sncf.com/api/explore/v2.1/catalog/datasets/barometre-client/attachments/bsc_sept_2021_xlsx"
+        },
+        {
+          "id": "bsc_sept_2022_xlsx",
+          "title": "BSC sept 2022.xlsx",
+          "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "url": "https://ressources.data.sncf.com/api/explore/v2.1/catalog/datasets/barometre-client/attachments/bsc_sept_2022_xlsx"
+        },
+        {
+          "id": "bsc_mars_2022_xlsx",
+          "title": "BSC mars 2022.xlsx",
+          "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "url": "https://ressources.data.sncf.com/api/explore/v2.1/catalog/datasets/barometre-client/attachments/bsc_mars_2022_xlsx"
+        },
+        {
+          "id": "bsc_mai_2023_xlsx",
+          "title": "BSC mai 2023.xlsx",
+          "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "url": "https://ressources.data.sncf.com/api/explore/v2.1/catalog/datasets/barometre-client/attachments/bsc_mai_2023_xlsx"
+        }
+      ],
+      "alternative_exports": [],
+      "data_visible": true,
+      "fields": [],
+      "metas": {
+        "dcat": {
+          "created": "2015-05-12",
+          "issued": "2015-05-12",
+          "creator": "Gares & Connexions",
+          "contributor": null,
+          "contact_name": null,
+          "contact_email": null,
+          "accrualperiodicity": "Semestriel",
+          "spatial": null,
+          "temporal": null,
+          "granularity": "Gares de France",
+          "dataquality": null,
+          "publisher_type": null,
+          "conforms_to": null,
+          "temporal_coverage_start": null,
+          "temporal_coverage_end": null,
+          "accessRights": null,
+          "relation": null
+        },
+        "default": {
+          "title": "Baromètre satisfaction client en gare",
+          "description": "<p>Le<strong> baromètre de satisfaction client</strong> en gare est l’outil principal de mesure de la qualité perçue de SNCF Gares &amp; Connexions. Les clients sont interrogés en face à face en gare et notent la gare de 0 à 10 autour des 7 promesses de service :</p><ul>   <li>Promesse 1 : les informations</li><li>Promesse 2 : les déplacements</li><li>Promesse 3 : la propreté et la      sûreté</li><li>Promesses 4 : le confort de l'attente</li><li>Promesse 5 : les commerces et      les services</li><li>Promesse 6 : l’architecture et les\nanimations</li><li>Promesse 7 : la mobilité durable</li></ul><ul>   </ul><ul>   </ul><ul>   </ul><ul>   </ul><p>Ces mesures sont réalisées dans les 130 plus grandes gares avec une fréquence de 2 vagues annuelles en mars et en septembre.</p><p><br/></p>",
+          "theme": [
+            "Gares"
+          ],
+          "keyword": [
+            "Satisfaction client",
+            "Gare de voyageurs",
+            "Service en gare"
+          ],
+          "license": "Open Database License (ODbL)",
+          "license_url": "https://data.sncf.com/pages/licence",
+          "language": "fr",
+          "metadata_languages": [
+            "fr"
+          ],
+          "timezone": null,
+          "modified": "2023-06-30T13:00:58+00:00",
+          "modified_updates_on_metadata_change": false,
+          "modified_updates_on_data_change": false,
+          "data_processed": null,
+          "metadata_processed": "2023-06-30T13:02:15.935000+00:00",
+          "geographic_reference": [
+            "world_fr"
+          ],
+          "geographic_reference_auto": true,
+          "territory": [
+            "France"
+          ],
+          "geometry_types": null,
+          "bbox": null,
+          "publisher": "Gares & Connexions",
+          "references": null,
+          "records_count": 0,
+          "attributions": null,
+          "source_domain": null,
+          "source_domain_title": null,
+          "source_domain_address": null,
+          "source_dataset": null,
+          "shared_catalog": null,
+          "federated": false,
+          "parent_domain": null,
+          "update_frequency": null
+        },
+        "custom": {
+          "cycle": null,
+          "periodicity": "Semestrielle",
+          "test-meta": null
+        }
+      }
+    },
+    {
+      "visibility": "domain",
+      "dataset_id": "documents-de-reference-des-gares",
+      "dataset_uid": "da_cp3326",
+      "has_records": false,
+      "features": [],
+      "attachments": [],
+      "alternative_exports": [],
+      "data_visible": true,
+      "fields": [],
+      "metas": {
+        "dcat": {
+          "created": null,
+          "issued": null,
+          "creator": null,
+          "contributor": null,
+          "contact_name": null,
+          "contact_email": null,
+          "accrualperiodicity": "annuelle",
+          "spatial": null,
+          "temporal": null,
+          "granularity": null,
+          "dataquality": null,
+          "publisher_type": null,
+          "conforms_to": null,
+          "temporal_coverage_start": null,
+          "temporal_coverage_end": null,
+          "accessRights": null,
+          "relation": null
+        },
+        "default": {
+          "title": "Documents de Référence des Gares de voyageurs",
+          "description": "<p>Le document de référence des gares de voyageurs (DRG) recense les conditions d’accès aux gares et à aux prestations de SNCF Gares&amp;Connexions pour le service horaire.</p><p>Les différentes versions du DRG sont disponibles sur : <a href=\"https://www.garesetconnexions.sncf/fr/transports_ferroviaires\" target=\"_blank\">https://www.garesetconnexions.sncf/fr/transports_ferroviaires</a></p>",
+          "theme": [
+            "Gares",
+            "Informations institutionnelles et financières"
+          ],
+          "keyword": [
+            "Gare de voyageurs",
+            "Gares"
+          ],
+          "license": "Open Database License (ODbL)",
+          "license_url": "https://data.sncf.com/pages/licence",
+          "language": "fr",
+          "metadata_languages": [
+            "fr"
+          ],
+          "timezone": null,
+          "modified": "2024-07-10T13:24:04+00:00",
+          "modified_updates_on_metadata_change": true,
+          "modified_updates_on_data_change": false,
+          "data_processed": "2024-07-10T13:24:10+00:00",
+          "metadata_processed": "2024-07-10T13:24:10.506000+00:00",
+          "geographic_reference": [
+            "world_fr"
+          ],
+          "geographic_reference_auto": true,
+          "territory": [
+            "France"
+          ],
+          "geometry_types": null,
+          "bbox": null,
+          "publisher": "Gares & Connexions",
+          "references": null,
+          "records_count": 0,
+          "attributions": null,
+          "source_domain": null,
+          "source_domain_title": null,
+          "source_domain_address": null,
+          "source_dataset": null,
+          "shared_catalog": null,
+          "federated": false,
+          "parent_domain": null,
+          "update_frequency": null
+        },
+        "custom": {
+          "cycle": null,
+          "periodicity": "Annuelle",
+          "test-meta": null
+        }
+      }
+    },
+    {
+      "visibility": "domain",
+      "dataset_id": "gares-equipees-du-wifi",
+      "dataset_uid": "da_lugy0y",
+      "has_records": true,
+      "features": [
+        "analyze"
+      ],
+      "attachments": [],
+      "alternative_exports": [],
+      "data_visible": true,
+      "fields": [
+        {
+          "name": "uic",
+          "annotations": {},
+          "description": "Code UIC de la gare",
+          "label": "UIC",
+          "type": "text"
+        },
+        {
+          "name": "nom_de_la_gare",
+          "annotations": {
+            "facet": true,
+            "facetsort": "alphanum",
+            "sortable": true
+          },
+          "description": "Nom de la gare",
+          "label": "Gare",
+          "type": "text"
+        },
+        {
+          "name": "service_wifi",
+          "annotations": {
+            "facet": true
+          },
+          "description": null,
+          "label": "Service Wifi",
+          "type": "text"
+        }
+      ],
+      "metas": {
+        "dcat": {
+          "created": null,
+          "issued": null,
+          "creator": null,
+          "contributor": null,
+          "contact_name": null,
+          "contact_email": null,
+          "accrualperiodicity": null,
+          "spatial": null,
+          "temporal": null,
+          "granularity": null,
+          "dataquality": null,
+          "publisher_type": null,
+          "conforms_to": null,
+          "temporal_coverage_start": null,
+          "temporal_coverage_end": null,
+          "accessRights": null,
+          "relation": null
+        },
+        "default": {
+          "title": "Gares équipées du wifi",
+          "description": "<p>Liste des gares équipées ou non en wifi</p>",
+          "theme": [
+            "Gares",
+            "Digital et innovation"
+          ],
+          "keyword": [
+            "Gares de voyageurs",
+            "Gare de voyageurs",
+            "wifi",
+            "Services en gare"
+          ],
+          "license": "Open Database License (ODbL)",
+          "license_url": "https://data.sncf.com/pages/licence",
+          "language": "fr",
+          "metadata_languages": [
+            "fr"
+          ],
+          "timezone": null,
+          "modified": "2017-07-04T15:20:24+00:00",
+          "modified_updates_on_metadata_change": false,
+          "modified_updates_on_data_change": true,
+          "data_processed": "2017-07-04T15:20:24+00:00",
+          "metadata_processed": "2020-06-11T09:59:31.142000+00:00",
+          "geographic_reference": [
+            "world_fr"
+          ],
+          "geographic_reference_auto": true,
+          "territory": [
+            "France"
+          ],
+          "geometry_types": null,
+          "bbox": null,
+          "publisher": "Gares & Connexions",
+          "references": null,
+          "records_count": 2997,
+          "attributions": null,
+          "source_domain": null,
+          "source_domain_title": null,
+          "source_domain_address": null,
+          "source_dataset": null,
+          "shared_catalog": null,
+          "federated": false,
+          "parent_domain": null,
+          "update_frequency": null
+        },
+        "custom": {
+          "cycle": null,
+          "periodicity": null,
+          "test-meta": null
+        }
+      }
+    },
+    {
+      "visibility": "domain",
+      "dataset_id": "proprete-en-gare",
+      "dataset_uid": "da_iwabrc",
+      "has_records": true,
+      "features": [
+        "timeserie",
+        "analyze"
+      ],
+      "attachments": [],
+      "alternative_exports": [],
+      "data_visible": true,
+      "fields": [
+        {
+          "name": "mois",
+          "description": null,
+          "annotations": {
+            "facet": true,
+            "timeserie_precision": "month",
+            "facetsort": "-alphanum"
+          },
+          "label": "Mois",
+          "type": "date"
+        },
+        {
+          "name": "uic",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "UIC",
+          "type": "text"
+        },
+        {
+          "name": "nom_gare",
+          "description": null,
+          "annotations": {
+            "sortable": true,
+            "facet": true
+          },
+          "label": "Nom gare",
+          "type": "text"
+        },
+        {
+          "name": "nombre_de_non_conformites",
+          "description": null,
+          "annotations": {},
+          "label": "Nombre de non-conformités",
+          "type": "int"
+        },
+        {
+          "name": "nombre_d_observations",
+          "description": null,
+          "annotations": {},
+          "label": "Nombre d'observations",
+          "type": "int"
+        },
+        {
+          "name": "taux_de_conformite",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count",
+            "unit": "%",
+            "decimals": 1
+          },
+          "label": "Taux de conformité",
+          "type": "double"
+        }
+      ],
+      "metas": {
+        "dcat": {
+          "created": null,
+          "issued": null,
+          "creator": null,
+          "contributor": null,
+          "contact_name": null,
+          "contact_email": null,
+          "accrualperiodicity": null,
+          "spatial": null,
+          "temporal": null,
+          "granularity": null,
+          "dataquality": null,
+          "publisher_type": null,
+          "conforms_to": null,
+          "temporal_coverage_start": null,
+          "temporal_coverage_end": null,
+          "accessRights": null,
+          "relation": null
+        },
+        "default": {
+          "title": "Contrôles de propreté en gare",
+          "description": "<p>Ce jeu de données informe sur le niveau de propreté des gares. </p><p><strong>La propreté des gares est un enjeu fort pour SNCF. En vue de satisfaire les clients, SNCF réalise, conjointement avec le prestataire, des contrôles de conformité de la prestation de nettoyage, dont la fréquence varie en fonction de l’importance de la gare. Ces contrôles reposent sur la réalisation d’observations dans différentes zones de la gare abord, accès, hall, quais, … et sur différents supports (vitres, sols, signalétique). L’obligation de résultat est fixée à 90% de conformité minimum. En deçà, des actions correctives sont déclenchées rapidement et s’inscrivent dans une démarche d’amélioration continue.</strong></p><p>Pour chaque gare, une ligne du jeu de données correspond à un ensemble mensuel de contrôles de propreté effectués suite au passage et actions des prestataires de nettoyage. Pour chaque mois sont indiqués le nombre d'observations total et le nombre d'observations non-conformes aux attendus dans la gare concernée.  </p><p>Le taux de conformité se calcule par l'opération (nb d’observations – nb de non-conformités)/(nb d’observations).</p>",
+          "theme": [
+            "Gares",
+            "Propreté"
+          ],
+          "keyword": [
+            "Propreté",
+            "Gares",
+            "Services en gare"
+          ],
+          "license": "Open Database License (ODbL)",
+          "license_url": "https://data.sncf.com/pages/licence",
+          "language": "fr",
+          "metadata_languages": [
+            "fr"
+          ],
+          "timezone": null,
+          "modified": "2025-10-01T22:00:46+00:00",
+          "modified_updates_on_metadata_change": false,
+          "modified_updates_on_data_change": true,
+          "data_processed": "2025-10-01T22:00:46+00:00",
+          "metadata_processed": "2025-10-01T22:00:46.237000+00:00",
+          "geographic_reference": [
+            "world_fr"
+          ],
+          "geographic_reference_auto": true,
+          "territory": [
+            "France"
+          ],
+          "geometry_types": null,
+          "bbox": null,
+          "publisher": "Gares & Connexions",
+          "references": null,
+          "records_count": 75854,
+          "attributions": null,
+          "source_domain": null,
+          "source_domain_title": null,
+          "source_domain_address": null,
+          "source_dataset": null,
+          "shared_catalog": null,
+          "federated": false,
+          "parent_domain": null,
+          "update_frequency": null
+        },
+        "custom": {
+          "cycle": null,
+          "periodicity": "Mensuelle",
+          "test-meta": null
+        }
+      }
+    },
+    {
+      "visibility": "domain",
+      "dataset_id": "service-d-attente-en-gare-api",
+      "dataset_uid": "da_c35eqo",
+      "has_records": true,
+      "features": [
+        "analyze"
+      ],
+      "attachments": [],
+      "alternative_exports": [],
+      "data_visible": true,
+      "fields": [
+        {
+          "name": "serviceattente",
+          "description": null,
+          "annotations": {},
+          "label": "Service attente",
+          "type": "text"
+        },
+        {
+          "name": "gare",
+          "description": null,
+          "annotations": {},
+          "label": "Gare",
+          "type": "text"
+        },
+        {
+          "name": "trigramme",
+          "description": null,
+          "annotations": {},
+          "label": "Trigramme",
+          "type": "text"
+        },
+        {
+          "name": "longitude",
+          "description": null,
+          "annotations": {},
+          "label": "longitude",
+          "type": "double"
+        },
+        {
+          "name": "latitude",
+          "description": null,
+          "annotations": {},
+          "label": "latitude",
+          "type": "double"
+        }
+      ],
+      "metas": {
+        "dcat": {
+          "created": null,
+          "issued": null,
+          "creator": null,
+          "contributor": null,
+          "contact_name": null,
+          "contact_email": null,
+          "accrualperiodicity": null,
+          "spatial": null,
+          "temporal": null,
+          "granularity": null,
+          "dataquality": null,
+          "publisher_type": null,
+          "conforms_to": null,
+          "temporal_coverage_start": null,
+          "temporal_coverage_end": null,
+          "accessRights": null,
+          "relation": null
+        },
+        "default": {
+          "title": "Service d'attente en gare",
+          "description": "<p class=\"MsoNormal\">Ce jeu de données présente, pour chaque gare, les services\nsuivants mis à disposition : <o:p></o:p></p><p class=\"\" style=\"font-family: sans-serif;\">\n\n</p><ul style=\"margin-top:0cm\" type=\"disc\">\n <li class=\"MsoNormal\">Pianos\n     en libre-service,<o:p></o:p></li>\n <li class=\"MsoNormal\">Babyfoot,<o:p></o:p></li>\n <li class=\"MsoNormal\">Distributeurs\n     d'histoires courtes,<o:p></o:p></li>\n <li class=\"MsoNormal\">Power\n     &amp; Station (vélos pour recharger son smartphone ou sa tablette),</li>\n <li class=\"MsoNormal\">Playing\n     Wall (jukebox digital).<o:p></o:p></li>\n</ul>",
+          "theme": [
+            "Services gare"
+          ],
+          "keyword": [
+            "Services en gare",
+            "Loisirs",
+            "Gare de voyageurs"
+          ],
+          "license": null,
+          "license_url": null,
+          "language": "fr",
+          "metadata_languages": [
+            "fr"
+          ],
+          "timezone": null,
+          "modified": "2025-09-29T16:00:20+00:00",
+          "modified_updates_on_metadata_change": false,
+          "modified_updates_on_data_change": true,
+          "data_processed": "2025-09-29T16:00:20+00:00",
+          "metadata_processed": "2025-10-21T08:00:22.812000+00:00",
+          "geographic_reference": [
+            "world_fr"
+          ],
+          "geographic_reference_auto": true,
+          "territory": [
+            "France"
+          ],
+          "geometry_types": null,
+          "bbox": null,
+          "publisher": "Gares & Connexions",
+          "references": null,
+          "records_count": 263,
+          "attributions": null,
+          "source_domain": null,
+          "source_domain_title": null,
+          "source_domain_address": null,
+          "source_dataset": null,
+          "shared_catalog": null,
+          "federated": false,
+          "parent_domain": null,
+          "update_frequency": "DAILY"
+        },
+        "custom": {
+          "cycle": null,
+          "periodicity": "Quotidienne",
+          "test-meta": null
+        }
+      }
+    },
+    {
+      "visibility": "domain",
+      "dataset_id": "accompagnement-pmr-gares",
+      "dataset_uid": "da_e5bymm",
+      "has_records": true,
+      "features": [
+        "timeserie",
+        "analyze"
+      ],
+      "attachments": [],
+      "alternative_exports": [],
+      "data_visible": true,
+      "fields": [
+        {
+          "name": "datemensuel",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count",
+            "timeserie_precision": "month",
+            "facet": true
+          },
+          "label": "Date/Mensuel",
+          "type": "date"
+        },
+        {
+          "name": "uic",
+          "description": null,
+          "annotations": {},
+          "label": "Code UIC",
+          "type": "text"
+        },
+        {
+          "name": "gare",
+          "description": null,
+          "annotations": {
+            "sortable": true,
+            "facet": true,
+            "facetsort": "alphanum"
+          },
+          "label": "Nom de la gare",
+          "type": "text"
+        },
+        {
+          "name": "assistance_simple",
+          "description": null,
+          "annotations": {},
+          "label": "Assistance simple",
+          "type": "int"
+        },
+        {
+          "name": "rampe",
+          "description": null,
+          "annotations": {},
+          "label": "Rampe",
+          "type": "int"
+        },
+        {
+          "name": "fauteuil",
+          "description": null,
+          "annotations": {},
+          "label": "Fauteuil",
+          "type": "int"
+        },
+        {
+          "name": "rampe_fauteuil",
+          "description": null,
+          "annotations": {},
+          "label": "Rampe et  fauteuil",
+          "type": "int"
+        },
+        {
+          "name": "total",
+          "description": null,
+          "annotations": {},
+          "label": "Total",
+          "type": "int"
+        }
+      ],
+      "metas": {
+        "dcat": {
+          "created": "2015-02-17",
+          "issued": "2015-02-17",
+          "creator": null,
+          "contributor": null,
+          "contact_name": null,
+          "contact_email": null,
+          "accrualperiodicity": "Mensuelle",
+          "spatial": null,
+          "temporal": "Depuis 2015",
+          "granularity": "Par accompagnement",
+          "dataquality": null,
+          "publisher_type": null,
+          "conforms_to": null,
+          "temporal_coverage_start": null,
+          "temporal_coverage_end": null,
+          "accessRights": null,
+          "relation": null
+        },
+        "default": {
+          "title": "Accompagnement de personnes à mobilité réduite dans les gares",
+          "description": "<p>Ces données fournissent le nombre d'accompagnements de personnes à mobilité réduite dans les gares depuis 2015.</p>",
+          "theme": [
+            "Gares",
+            "Services voyageurs"
+          ],
+          "keyword": [
+            "Accessibilité",
+            "Gare de voyageurs"
+          ],
+          "license": "Open Database License (ODbL)",
+          "license_url": "https://data.sncf.com/pages/licence",
+          "language": "fr",
+          "metadata_languages": [
+            "fr"
+          ],
+          "timezone": null,
+          "modified": "2022-03-23T10:13:39+00:00",
+          "modified_updates_on_metadata_change": false,
+          "modified_updates_on_data_change": true,
+          "data_processed": "2022-03-23T10:13:39+00:00",
+          "metadata_processed": "2022-03-23T10:13:39.570000+00:00",
+          "geographic_reference": [
+            "world_fr"
+          ],
+          "geographic_reference_auto": true,
+          "territory": [
+            "France"
+          ],
+          "geometry_types": null,
+          "bbox": null,
+          "publisher": "Gares & Connexions",
+          "references": null,
+          "records_count": 51861,
+          "attributions": null,
+          "source_domain": null,
+          "source_domain_title": null,
+          "source_domain_address": null,
+          "source_dataset": null,
+          "shared_catalog": null,
+          "federated": false,
+          "parent_domain": null,
+          "update_frequency": null
+        },
+        "custom": {
+          "cycle": null,
+          "periodicity": "Mensuelle",
+          "test-meta": null
+        }
+      }
+    },
+    {
+      "visibility": "domain",
+      "dataset_id": "equipements-accessibilite-en-gares",
+      "dataset_uid": "da_6n5mfh",
+      "has_records": true,
+      "features": [],
+      "attachments": [],
+      "alternative_exports": [],
+      "data_visible": true,
+      "fields": [
+        {
+          "name": "uic",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "UIC",
+          "type": "text"
+        },
+        {
+          "name": "nom_de_la_gare",
+          "description": null,
+          "annotations": {},
+          "label": "Nom de la gare",
+          "type": "text"
+        },
+        {
+          "name": "adresse",
+          "description": null,
+          "annotations": {},
+          "label": "Adresse",
+          "type": "text"
+        },
+        {
+          "name": "codepostal",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "CodePostal",
+          "type": "text"
+        },
+        {
+          "name": "ville",
+          "description": null,
+          "annotations": {},
+          "label": "Ville",
+          "type": "text"
+        },
+        {
+          "name": "accessibilite",
+          "description": null,
+          "annotations": {},
+          "label": "Accessibilité",
+          "type": "text"
+        }
+      ],
+      "metas": {
+        "dcat": {
+          "created": null,
+          "issued": null,
+          "creator": null,
+          "contributor": null,
+          "contact_name": null,
+          "contact_email": null,
+          "accrualperiodicity": null,
+          "spatial": null,
+          "temporal": null,
+          "granularity": null,
+          "dataquality": null,
+          "publisher_type": null,
+          "conforms_to": null,
+          "temporal_coverage_start": null,
+          "temporal_coverage_end": null,
+          "accessRights": null,
+          "relation": null
+        },
+        "default": {
+          "title": "Equipements d’accessibilité en gare",
+          "description": "<p class=\"MsoNormal\"><span style=\"font-size: 12pt; font-family: Arial, sans-serif; color: rgb(62, 62, 64); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;\">Liste des équipements d’accessibilité recensés\ndans les gares SNCF pour améliorer l’accessibilité des clients.<u5:p></u5:p></span><o:p></o:p></p><p>\n\n\n\n<u5:p></u5:p><u5:p></u5:p></p><p class=\"MsoNormal\"><span style='font-size:12.0pt;font-family:\"Arial\",sans-serif;\ncolor:#3E3E40;background:white'>Cette liste est mise à jour au fur et à mesure.\nCes informations ne sont donc pas encore disponibles pour toutes les gares.</span><o:p></o:p></p>",
+          "theme": [
+            "Equipements et services en gares",
+            "Gares"
+          ],
+          "keyword": [
+            "Gares",
+            "Accessibilité",
+            "Equipement"
+          ],
+          "license": "Open Database License (ODbL)",
+          "license_url": "https://data.sncf.com/pages/cgu/A1#A1",
+          "language": null,
+          "metadata_languages": null,
+          "timezone": null,
+          "modified": "2021-12-21T08:23:03+00:00",
+          "modified_updates_on_metadata_change": false,
+          "modified_updates_on_data_change": false,
+          "data_processed": "2021-12-16T15:35:52+00:00",
+          "metadata_processed": "2021-12-21T08:27:24.048000+00:00",
+          "geographic_reference": [
+            "world_fr"
+          ],
+          "geographic_reference_auto": true,
+          "territory": [
+            "France"
+          ],
+          "geometry_types": null,
+          "bbox": null,
+          "publisher": "Gares & Connexions",
+          "references": null,
+          "records_count": 1717,
+          "attributions": null,
+          "source_domain": null,
+          "source_domain_title": null,
+          "source_domain_address": null,
+          "source_dataset": null,
+          "shared_catalog": null,
+          "federated": false,
+          "parent_domain": null,
+          "update_frequency": null
+        },
+        "custom": {
+          "cycle": null,
+          "periodicity": "Irrégulière",
+          "test-meta": null
+        }
+      }
+    },
+    {
+      "visibility": "domain",
+      "dataset_id": "horaires-des-gares1",
+      "dataset_uid": "da_9oo5g5",
+      "has_records": true,
+      "features": [
+        "analyze"
+      ],
+      "attachments": [],
+      "alternative_exports": [],
+      "data_visible": true,
+      "fields": [
+        {
+          "name": "uic",
+          "description": "Code UIC de la gare\nIdentifiant unique",
+          "annotations": {},
+          "label": "﻿UIC",
+          "type": "text"
+        },
+        {
+          "name": "nom_normal",
+          "description": "Nom de la gare",
+          "annotations": {
+            "facet": true,
+            "facetsort": "alphanum",
+            "sortable": true
+          },
+          "label": "Gare",
+          "type": "text"
+        },
+        {
+          "name": "jour",
+          "description": null,
+          "annotations": {
+            "facet": true
+          },
+          "label": "Jour de la semaine",
+          "type": "text"
+        },
+        {
+          "name": "horaire_normal",
+          "description": null,
+          "annotations": {
+            "facetsort": "-count"
+          },
+          "label": "Horaire en jour normal",
+          "type": "text"
+        },
+        {
+          "name": "horaire_ferie",
+          "description": null,
+          "annotations": {},
+          "label": "Horaire en jour férié",
+          "type": "text"
+        }
+      ],
+      "metas": {
+        "dcat": {
+          "created": null,
+          "issued": null,
+          "creator": null,
+          "contributor": null,
+          "contact_name": null,
+          "contact_email": null,
+          "accrualperiodicity": null,
+          "spatial": null,
+          "temporal": null,
+          "granularity": null,
+          "dataquality": null,
+          "publisher_type": null,
+          "conforms_to": null,
+          "temporal_coverage_start": null,
+          "temporal_coverage_end": null,
+          "accessRights": null,
+          "relation": null
+        },
+        "default": {
+          "title": "Horaires des gares",
+          "description": "<p>Ce jeu de données contient les horaires d'ouverture au public des gares de voyageurs en France.</p><p>Chaque gare est identifiée dans la colonne \"UIC\" par son code UIC (identifiant unique).</p><p> Les horaires sont mentionnés pour chaque jour de la semaine dans la colonne \"Horaire en jour normal\". </p><p>Si, pour certains jours, les horaires varient dans le cas d'un jour férié mais que la gare reste ouverte, ses horaires sont renseignés dans la colonne \"Horaire en jour férié\". </p>",
+          "theme": [
+            "Gares",
+            "Horaires et itinéraires"
+          ],
+          "keyword": [
+            "Gares",
+            "Gares de voyageurs",
+            "Gare de voyageurs",
+            "Horaires",
+            "Horaire"
+          ],
+          "license": "Open Database License (ODbL)",
+          "license_url": "https://data.sncf.com/pages/licence",
+          "language": "fr",
+          "metadata_languages": [
+            "fr"
+          ],
+          "timezone": null,
+          "modified": "2024-03-15T13:04:58+00:00",
+          "modified_updates_on_metadata_change": false,
+          "modified_updates_on_data_change": false,
+          "data_processed": "2024-03-15T13:04:53+00:00",
+          "metadata_processed": "2024-03-15T13:05:04.004000+00:00",
+          "geographic_reference": [
+            "world_fr"
+          ],
+          "geographic_reference_auto": true,
+          "territory": [
+            "France"
+          ],
+          "geometry_types": null,
+          "bbox": null,
+          "publisher": "Gares & Connexions",
+          "references": "https://www.gares-sncf.com/fr",
+          "records_count": 6517,
+          "attributions": null,
+          "source_domain": null,
+          "source_domain_title": null,
+          "source_domain_address": null,
+          "source_dataset": null,
+          "shared_catalog": null,
+          "federated": false,
+          "parent_domain": null,
+          "update_frequency": null
+        },
+        "custom": {
+          "cycle": null,
+          "periodicity": "Irrégulière",
+          "test-meta": null
+        }
+      }
+    }
+  ]
+}
