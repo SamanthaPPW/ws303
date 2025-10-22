@@ -3,6 +3,7 @@ body {
   box-sizing: border-box;
   color: #1E1381;
   font-family: Smooth Sans, sans-serif;
+  font-weight: bolder;
 }
 
 
@@ -46,7 +47,6 @@ nav ul {
 nav a {
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bolder;
   font-size: 19.42px;
   padding: 5px 10px;
 }
@@ -71,11 +71,21 @@ nav a:hover {
 }
 
 .titre-intro {
+  margin: 25px 0 120px;
   font-size: 19.42px;
   padding: 30px 60px 30px 140px;
-  position: absolute;
+  position: relative;
   left: -44px;
   background-color: #f7d20f;
   border-radius: 60px;
   display: inline-block;
+}
+
+.intro br {
+  margin: 30px 0;
+}
+
+.intro article {
+  position: relative;
+  text-align: center;
 }

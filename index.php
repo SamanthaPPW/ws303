@@ -30,7 +30,11 @@
 
   <section class="intro">
     <h1 class="titre-intro">SEM, C'est quoi?</h1>
-
+    <article>
+      <p>C'est la solution pour les étudiants !<br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum reiciendis nobis veritatis vero eos quisquam, deleniti magnam perferendis. Est ut doloremque consequuntur magnam repellat dignissimos incidunt. Eius beatae ?</p>
+    </article>
+</section>
   <div id="carte">
     <iframe title="Cartes des offres étudiantes par région" aria-label="Carte choroplèthe" id="datawrapper-chart-LWMtH"
       src="https://datawrapper.dwcdn.net/LWMtH/2/" scrolling="no" frameborder="0" data-external="1"></iframe>
