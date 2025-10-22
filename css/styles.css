@@ -1,20 +1,25 @@
 body {
   margin: 0;
+  box-sizing: border-box;
+  color: #1E1381;
+  font-family: Smooth Sans, sans-serif;
 }
 
-body {
-  margin: 0;
-}
 
 .logo {
   height: 40px;
   color: #1E1381;
   display: block;
+  padding-left: 20px;
 }
 
 
 .logo g path {
   fill: #1E1381 !important;
+}
+
+.train-image {
+  width: 100%
 }
 
 header {
@@ -23,8 +28,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 0 20px;
 }
 
 .header-spacer {
@@ -41,35 +44,38 @@ nav ul {
 }
 
 nav a {
-  font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #1E1381;
   font-weight: bolder;
-  font-size:19.42px;
-  font-family: Smooth Sans, sans-serif;
-  padding:5px 10px;
+  font-size: 19.42px;
+  padding: 5px 10px;
 }
 
-nav a:hover{
+nav a:hover {
   background-color: #fbe887;
   border-radius: 13px;
 }
 
-.actuel{
-  background-color: rgba(30, 19, 129,0.7);
-  color : white;
-  padding:5px 10px;
+.actuel {
+  background-color: rgba(30, 19, 129, 0.7);
+  color: white;
+  padding: 5px 10px;
   border-radius: 13px;
 }
 
-
-
-fbe887
-
-#crte {
+#carte {
   width: 0;
   min-width: 100% !important;
   border: none;
   height: 400px;
+}
+
+.titre-intro {
+  font-size: 19.42px;
+  padding: 30px 60px 30px 140px;
+  position: absolute;
+  left: -44px;
+  background-color: #f7d20f;
+  border-radius: 60px;
+  display: inline-block;
 }

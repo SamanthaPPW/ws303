@@ -26,6 +26,11 @@
     </nav>
     <div class="header-spacer"></div>
   </header>
+  <img src="images/sem-train.png" alt="Image de train, banière du site" class="train-image">
+
+  <section class="intro">
+    <h1 class="titre-intro">SEM, C'est quoi?</h1>
+
   <div id="carte">
     <iframe title="Cartes des offres étudiantes par région" aria-label="Carte choroplèthe" id="datawrapper-chart-LWMtH"
       src="https://datawrapper.dwcdn.net/LWMtH/2/" scrolling="no" frameborder="0" data-external="1"></iframe>
