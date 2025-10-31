@@ -1,12 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  box-sizing: border-box;
   color: #1E1381;
   font-family: Smooth Sans, sans-serif;
   font-weight: bolder;
+  
 }
 
-
+#bodyindex{
+  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 60%, #6b73af 75%, #1E1381 88%);
+  background-attachment: static;
+}
 .logo {
   height: 40px;
   color: #1E1381;
@@ -118,8 +125,8 @@ nav a:hover {
 }
 
 .membre {
-  width: 250px;
-  height: 500px;
+  width: 300px;
+  height: 510px;
   text-align: center;
   color: #1E1381;
   background-color: white;
@@ -169,4 +176,67 @@ nav a:hover {
 
 #espace {
   padding-top: 300px;
+}
+
+main {
+  width: 100%;
+}
+
+article {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Parfait pour centrer verticalement le contenu */
+
+  /* Laissez un peu de hauteur minimum pour l'image */
+  min-height: 400px;
+
+  /* On ajuste cette marge pour qu'elle ne soit pas excessive, car l'image est à l'intérieur maintenant */
+  margin-bottom: 100px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+article img {
+  position: absolute;
+
+  /* On centre l'image dans l'article */
+  top: 50%;
+  left: 50%;
+  /* Nouveau : on utilise left: 50% */
+  transform: translate(-50%, -50%);
+  /* Nouveau : On utilise translate(-50%, -50%) pour le centrage parfait */
+
+  /* On augmente la taille de l'image pour qu'elle soit bien visible en fond (responsive) */
+  width: 120%;
+  max-width: 900px;
+  /* Optionnel : pour ne pas qu'elle soit gigantesque sur les très grands écrans */
+  height: auto;
+
+  object-fit: contain;
+  /* Assure que toute l'image est visible */
+  z-index: 0;
+  /* Parfait pour la mettre en arrière-plan */
+  pointer-events: none;
+  opacity: 0.3;
+  /* J'ai réduit un peu l'opacité pour que le texte soit plus lisible, comme dans votre maquette */
+}
+
+article p {
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  z-index: 2;
+  padding: 18px;
+  border-radius: 8px;
+  margin: 0;
+  text-align: center;
+}
+
+footer {
+  margin-top: 500px;
+height: 300px;
+color: white;
+font-size : 100px;
 }

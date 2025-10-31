@@ -1,22 +1,40 @@
-CREATE TABLE Abonnements (
-    -- Clé primaire pour identifier chaque abonnement de manière unique
-    abonnement_id INT PRIMARY KEY AUTO_INCREMENT,
-    
-    -- Nom de l’abonnement (ex: "Pass Découverte")
-    abonnement_nom VARCHAR(255) NOT NULL UNIQUE, 
-    
-    -- Région concernée (ex: "Île-de-France", "National")
-    abonnement_region VARCHAR(100),
-    
-    -- Coût de l’abonnement (VARCHAR pour la , sous forme de --- € )
-    abonnement_prix VARCHAR(5),
-    
-    -- Durée de validité en mois (1 pour mensuel, 12 pour annuel, etc.)
-    abonnement_duree_mois INT NOT NULL,
-    
-    -- Type d’abonnement (ex: "Jeune", "Senior", "Étudiant")
-    abonnement_type VARCHAR(100),
-    
-    -- Site officiel / lien d’information
-    abonnement_lien VARCHAR(512)
+CREATE TABLE abonnements (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(255) NOT NULL,
+    region_courte VARCHAR(100),
+    description TEXT,
+    details TEXT,
+    code_datawrapper TEXT
 );
+
+-- Insertion des abonnements
+INSERT INTO abonnements (nom, region_courte, description, details, code_datawrapper) VALUES
+('Carte Mezzo', 'Occitanie', 'TEXTE_A_COMPLETER: Description courte Mezzo.', 'TEXTE_A_COMPLETER: Conditions, avantages, etc. pour Mezzo.',
+'<iframe title="Régions pour carte Mezzo" aria-label="Choropleth map" id="datawrapper-chart-JjALr" src="https://datawrapper.dwcdn.net/JjALr/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="622" data-external="1"></iframe>'),
+
+('Pass ZOU! Etudes', 'Provence-Alpes-Côte d''Azur', 'TEXTE_A_COMPLETER: Description courte Pass ZOU! Etudes.', 'TEXTE_A_COMPLETER: Conditions, avantages, etc. pour ZOU! Etudes.',
+'<iframe title="Région pour Pass ZOU! Etudes" aria-label="Choropleth map" id="datawrapper-chart-UygMq" src="https://datawrapper.dwcdn.net/UygMq/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="622" data-external="1"></iframe>'),
+
+('Carte Etudiant / Via Corsica', 'Corse', 'TEXTE_A_COMPLETER: Description courte Carte Via Corsica.', 'TEXTE_A_COMPLETER: Conditions, avantages, etc. pour Via Corsica.',
+'<iframe title="Région pour la Carte Etudiant / Via Corsica" aria-label="Choropleth map" id="datawrapper-chart-4uFYB" src="https://datawrapper.dwcdn.net/4uFYB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="622" data-external="1"></iframe>'),
+
+('Carte +', 'National', 'TEXTE_A_COMPLETER: Description courte Carte +.', 'TEXTE_A_COMPLETER: Conditions, avantages, etc. pour Carte +.',
+'<iframe title="Régions pour Carte +" aria-label="Choropleth map" id="datawrapper-chart-PjkLh" src="https://datawrapper.dwcdn.net/PjkLh/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="622" data-external="1"></iframe>'),
+
+('Pass NOMAD', 'Normandie', 'TEXTE_A_COMPLETER: Description courte Pass NOMAD.', 'TEXTE_A_COMPLETER: Conditions, avantages, etc. pour Pass NOMAD.',
+'<iframe title="Régions pour Pass NOMAD" aria-label="Choropleth map" id="datawrapper-chart-GqgjC" src="https://datawrapper.dwcdn.net/GqgjC/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="622" data-external="1"></iframe>'),
+
+('Imagine R', 'Île-de-France', 'TEXTE_A_COMPLETER: Description courte Imagine R.', 'TEXTE_A_COMPLETER: Conditions, avantages, etc. pour Imagine R.',
+'<iframe title="Région pour Imagine R" aria-label="Choropleth map" id="datawrapper-chart-XAgiG" src="https://datawrapper.dwcdn.net/XAgiG/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="622" data-external="1"></iframe>'),
+
+('Ma carte TER - 26', 'Auvergne-Rhône-Alpes', 'TEXTE_A_COMPLETER: Description courte Ma carte TER - 26.', 'TEXTE_A_COMPLETER: Conditions, avantages, etc. pour Ma carte TER - 26.',
+'<iframe title="Régions pour Ma carte TER - 26" aria-label="Choropleth map" id="datawrapper-chart-KsIvY" src="https://datawrapper.dwcdn.net/KsIvY/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="622" data-external="1"></iframe>'),
+
+('Carte Rémi Liberté Jeune', 'Centre-Val de Loire', 'TEXTE_A_COMPLETER: Description courte Carte Rémi Liberté Jeune.', 'TEXTE_A_COMPLETER: Conditions, avantages, etc. pour Carte Rémi Liberté Jeune.',
+'<iframe title="Régions pour Carte Rémi Liberté Jeune" aria-label="Choropleth map" id="datawrapper-chart-5GIjw" src="https://datawrapper.dwcdn.net/5GIjw/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="622" data-external="1"></iframe>'),
+
+('Tarif TER Jeunes/ Pass BreizhGo', 'Bretagne', 'TEXTE_A_COMPLETER: Description courte Pass BreizhGo.', 'TEXTE_A_COMPLETER: Conditions, avantages, etc. pour Pass BreizhGo.',
+'<iframe title="Région pour Tarif TER Jeunes/ Pass BreizhGo" aria-label="Choropleth map" id="datawrapper-chart-rCK2F" src="https://datawrapper.dwcdn.net/rCK2F/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="622" data-external="1"></iframe>'),
+
+('Carte illico LIBERTÉ JEUNES', 'Hauts-de-France', 'TEXTE_A_COMPLETER: Description courte Carte illico.', 'TEXTE_A_COMPLETER: Conditions, avantages, etc. pour Carte illico.',
+'<iframe title="Régions pour la carte illico LIBERTÉ JEUNES" aria-label="Choropleth map" id="datawrapper-chart-7tRte" src="https://datawrapper.dwcdn.net/7tRte/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="622" data-external="1"></iframe>');
