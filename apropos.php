@@ -33,7 +33,7 @@
         <div class="membre">
           <h2>S</h2>
           <div class="photo">
-            <img src="images/samphoto.png" alt="photo de Samantha">
+            <img src="images/samphoto.jpg" alt="photo de Samantha">
           </div>
           <p><strong>Je suis Sam</strong>, la développeuse fullstack de ce projet.<br>
           Lors de celui-ci, j’ai fait :
@@ -48,7 +48,7 @@
         <div class="membre">
           <h2>E</h2>
           <div class="photo">
-            <img src="images/image.png" alt="photo membre E">
+            <img src="images/eleophoto.jpg" alt="photo de Eleonore">
           </div>
           <p><strong>Je suis Éléonore</strong>, la chargée de communication de ce projet.<br>
           Lors de celui-ci, j’ai fait :
@@ -62,7 +62,7 @@
         <div class="membre">
           <h2>M</h2>
           <div class="photo">
-            <img src="images/image.png" alt="photo membre M">
+            <img src="images/mush.jpeg" alt="photo de Mush">
           </div>
           <p><strong>Je suis Mush</strong>, le graphiste de ce projet.<br>
           Lors de celui-ci, j’ai fait :
