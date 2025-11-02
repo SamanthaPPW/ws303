@@ -62,7 +62,7 @@
         <div class="membre">
           <h2>M</h2>
           <div class="photo">
-            <img src="images/mush.jpeg" alt="photo de Mush">
+            <img src="images/mushphoto.jpg" alt="photo de Mush">
           </div>
           <p><strong>Je suis Mush</strong>, le graphiste de ce projet.<br>
           Lors de celui-ci, j’ai fait :
@@ -78,6 +78,30 @@
       </div>
     </section>
   </main>
-
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <p class="footer-logo">SEM</p>
+            <p class="copyright">© 2025 SEM. Tous droits réservés.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="explorer.php">Explorer les offres</a></li>
+                <li><a href="apropos.php">À propos de SEM</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Info légales</h3>
+            <ul>
+                <li><a href="#">Mentions Légales</a></li>
+                <li><a href="#">Politique de Confidentialité</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

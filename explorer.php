@@ -1,9 +1,6 @@
 <?php
 $rech = isset($_GET['rech']) ? strtolower($_GET['rech']) : "";
 
-
-
-
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +12,8 @@ $rech = isset($_GET['rech']) ? strtolower($_GET['rech']) : "";
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 <main>
@@ -31,53 +30,88 @@ $rech = isset($_GET['rech']) ? strtolower($_GET['rech']) : "";
     </nav>
     <div class="header-spacer"></div>
   </header>
-  <form action="explorer.php" method="get"> 
-  <section class="recherche">
-    <input type="text" name="rech" placeholder="Rechercher..." value="<?php echo htmlspecialchars($rech); ?>">
-    <button type="submit">Rechercher</button>
-  </section>
-  </form>
+<form action="explorer.php" method="get"> 
+<section class="recherche">
+  <h2>Barre de Recherche</h2> 
+  
+  <div class="search-container">
+        <input type="text" name="rech" placeholder="Entrez votre recherche..." value="<?php echo htmlspecialchars($rech); ?>">
+  
+    <button type="submit" class="search-button">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+</section>
+</form>
 
 <?php
 require 'sql/confdb.php';
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $passwd);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-    $rech = isset($_GET['rech']) ? strtolower(trim($_GET['rech'])) : "";
-    $sql = "SELECT nom, region_courte, description FROM abonnements";
-    $params = [];
-    if ($rech) {
-        $sql .= " WHERE nom LIKE :rech OR region_courte LIKE :rech";
-        $params[':rech'] = "%" . $rech . "%";
-    }
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute($params);
-    $abonnements = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $passwd);
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $rech_valeur = isset($_GET['rech']) ? strtolower(trim($_GET['rech'])) : "";
+  $sql = "SELECT nom, region_courte, description, code_datawrapper FROM abonnements";
+  $params = [];
+  if (!empty($rech_valeur)) {
+    $sql .= " WHERE nom LIKE :rech OR region_courte LIKE :rech";
+    $params[':rech'] = "%" . $rech_valeur . "%";
+  }
+  $stmt = $pdo->prepare($sql);
+  $stmt->execute($params);
+  $abonnements = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 } catch (PDOException $e) {
-    echo "Erreur de connexion : " . $e->getMessage();
-    $abonnements = []; 
+  echo "Erreur de connexion : " . $e->getMessage();
+  $abonnements = [];
 }
 ?>
 
 <section class="abonnements">
-  <?php if (count($abonnements) > 0): ?>
-    <?php foreach ($abonnements as $abonnement): ?>
-      <a href="page-carte.php?nom=<?php echo urlencode($abonnement['nom']); ?>" class="abonnement-card">
-        <div class="image-placeholder"></div> <div class="abonnement-info">
-            <h2><?php echo htmlspecialchars($abonnement['nom']); ?></h2>
-            <p><?php echo htmlspecialchars($abonnement['region_courte']); ?></p>
-            </div>
-      </a>
-    <?php endforeach; ?>
-  <?php else: ?>
-    <p>Aucun abonnement trouvé pour "<?php echo htmlspecialchars($rech); ?>".</p>
-  <?php endif; ?>
+<?php if (count($abonnements) > 0): ?>
+  <?php foreach ($abonnements as $abonnement): ?>
+    <a href="page-carte.php?nom=<?php echo urlencode($abonnement['nom']); ?>" class="abonnement-card">
+      
+      <div class="image-placeholder">
+          <?php echo $abonnement['code_datawrapper']; ?> 
+      </div> 
 
-  </section>
+      <div class="abonnement-info">
+          <h2><?php echo htmlspecialchars($abonnement['nom']); ?></h2>
+          <p><?php echo htmlspecialchars($abonnement['region_courte']); ?></p>
+      </div>
+    </a>
+  <?php endforeach; ?>
+<?php else: ?>
+  <p>Aucun abonnement trouvé pour "<?php echo htmlspecialchars($rech); ?>".</p>
+<?php endif; ?>
+</section>
 </main>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <p class="footer-logo">SEM</p>
+            <p class="copyright">© 2025 SEM. Tous droits réservés.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="explorer.php">Explorer les offres</a></li>
+                <li><a href="apropos.php">À propos de SEM</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Info légales</h3>
+            <ul>
+                <li><a href="#">Mentions Légales</a></li>
+                <li><a href="#">Politique de Confidentialité</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
 <!--

@@ -38,3 +38,77 @@ INSERT INTO abonnements (nom, region_courte, description, details, code_datawrap
 
 ('Carte illico LIBERTÉ JEUNES', 'Hauts-de-France', 'TEXTE_A_COMPLETER: Description courte Carte illico.', 'TEXTE_A_COMPLETER: Conditions, avantages, etc. pour Carte illico.',
 '<iframe title="Régions pour la carte illico LIBERTÉ JEUNES" aria-label="Choropleth map" id="datawrapper-chart-7tRte" src="https://datawrapper.dwcdn.net/7tRte/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="622" data-external="1"></iframe>');
+
+
+-- 1. Mise à jour de 'Carte Mezzo' (ID 1)
+UPDATE abonnements SET
+    description = 'La carte de réduction pour les Pays de la Loire et les régions limitrophes.',
+    details = 'Coût : 20€ par an. Durée : 1 an. Public : Moins de 26 ans. Régions : Pays de la Loire, Bretagne, Normandie, Centre-Val de Loire, Nouvelle-Aquitaine. Site : https://www.ter.sncf.com/pays-de-la-loire/tarifs-cartes/cartes-de-reduction/carte-mezzo-moins-de-26-ans',
+    region_courte = 'Pays de la Loire' -- Plus précis que juste Occitanie
+WHERE id = 1;
+
+-- 2. Mise à jour de 'Pass ZOU! Etudes' (ID 2)
+UPDATE abonnements SET
+    description = 'L''abonnement annuel de transport pour les jeunes de la région Sud Provence-Alpes-Côte d''Azur.',
+    details = 'Coût : 90€ par an (réduction possible à 45€/an). Durée : 1 an. Public : 3 à 25 ans (scolaires et étudiants). Site : https://zou.maregionsud.fr/acheter-un-pass-zou-etudes-2025-2026/',
+    region_courte = 'PACA'
+WHERE id = 2;
+
+-- 3. Mise à jour de 'Carte Etudiant / Via Corsica' (ID 3)
+UPDATE abonnements SET
+    description = 'La carte de réduction pour les étudiants et lycéens internes voyageant en Corse.',
+    details = 'Coût : 20€ par an. Durée : 1 année scolaire. Public : Étudiants, Lycéens internes, Apprentis. Site : https://cf-corse.corsica/carte-etudiant-lyceen-interne-apprenti-mineur-via-corsica/',
+    region_courte = 'Corse'
+WHERE id = 3;
+
+-- 4. Mise à jour de 'Carte +' (ID 4)
+UPDATE abonnements SET
+    description = 'La carte de réduction inter-régionale pour voyager dans le centre-ouest de la France.',
+    details = 'Coût : 29€ par an. Durée : 1 an. Public : Moins de 28 ans. Régions : Nouvelle-Aquitaine, Centre-Val de Loire, Pays de la Loire, Occitanie et Auvergne-Rhône-Alpes. Site : https://www.ter.sncf.com/nouvelle-aquitaine/tarifs-cartes/cartes-reduction/carte-plus',
+    region_courte = 'National (Centre-Ouest)'
+WHERE id = 4;
+
+-- 5. Mise à jour de 'Pass NOMAD' (ID 5)
+UPDATE abonnements SET
+    description = 'L''abonnement pour les moins de 26 ans en Normandie et régions frontalières (Carte Tempo).',
+    details = 'Coût : 30€ par an. Durée : 1 an. Public : Moins de 26 ans. Régions : Normandie, Bretagne, Hauts-de-France, Pays de la Loire. Site : https://www.ter.sncf.com/normandie/abonnements/tous-les-abonnements/abonnements-tempo-normandie/normandie-annuel-moins26ans',
+    region_courte = 'Normandie'
+WHERE id = 5;
+
+-- 6. Mise à jour de 'Imagine R' (ID 6)
+UPDATE abonnements SET
+    description = 'L''abonnement annuel de transport pour les étudiants et scolaires en Île-de-France.',
+    details = 'Coût : 374,40€ par an. Durée : 1 an. Public : Scolaires et étudiants. Site : https://www.iledefrance-mobilites.fr/imagine-r',
+    region_courte = 'Île-de-France'
+WHERE id = 6;
+
+-- 7. Mise à jour de 'Ma carte TER - 26' (ID 7)
+-- Il y a confusion. On utilise les détails de la carte 'Ma carte TER - 26' pour HDF (ID 7)
+UPDATE abonnements SET
+    description = 'La carte de réduction pour les moins de 26 ans en Hauts-de-France.',
+    details = 'Coût : 15€ par an. Durée : 1 an. Public : Moins de 26 ans. Régions : Hauts-de-France, Île de France, Normandie, Grand Est. Site : https://www.ter.sncf.com/hauts-de-france/tarifs-cartes/ma-carte-ter-hauts-de-france/%2B26-ans',
+    region_courte = 'Hauts-de-France'
+WHERE id = 7;
+
+-- 8. Mise à jour de 'Carte Rémi Liberté Jeune' (ID 8)
+UPDATE abonnements SET
+    description = 'La carte de réduction pour les jeunes en Centre-Val de Loire et régions limitrophes.',
+    details = 'Coût : 20€ par an. Durée : 1 an. Public : Moins de 26 ans. Régions : Centre-Val de Loire, Île de France, Nouvelle-Aquitaine, Pays de la Loire, Bourgogne-Franche-Comté, Auvergne-Rhône-Alpes, Normandie. Site : https://www.ter.sncf.com/centre-val-de-loire/tarifs-cartes/cartes-reduction/carte-remi-liberte-jeune',
+    region_courte = 'Centre-Val de Loire'
+WHERE id = 8;
+
+-- 9. Mise à jour de 'Tarif TER Jeunes/ Pass BreizhGo' (ID 9)
+-- Basé sur les infos BreizhGo.
+UPDATE abonnements SET
+    description = 'La carte de réduction Pass BreizhGo pour les jeunes en Bretagne.',
+    details = 'Coût : 15€ par an. Durée : 1 an. Public : Moins de 26 ans. Région : Bretagne. Site : https://www.breizhgo.bzh/tarifs-breizhgo',
+    region_courte = 'Bretagne'
+WHERE id = 9;
+
+-- 10. Mise à jour de 'Carte illico LIBERTÉ JEUNES' (ID 10)
+-- Basé sur les infos Auvergne-Rhône-Alpes.
+UPDATE abonnements SET
+    description = 'La carte illico LIBERTÉ JEUNES pour les déplacements en Auvergne-Rhône-Alpes et régions limitrophes.',
+    details = 'Coût : 15€ par an. Durée : 1 an. Public : Moins de 26 ans. Régions : Auvergne-Rhône-Alpes, Bourgogne-Franche-Comté, Provence-Alpes-Côte d’Azur, Centre Val de Loire, Occitanie. Site : https://www.ter.sncf.com/auvergne-rhone-alpes/tarifs-cartes/cartes-reduction/illico-liberte-jeunes',
+    region_courte = 'Auvergne-Rhône-Alpes'
+WHERE id = 10;

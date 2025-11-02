@@ -7,13 +7,14 @@ body {
   color: #1E1381;
   font-family: Smooth Sans, sans-serif;
   font-weight: bolder;
-  
+
 }
 
-#bodyindex{
-  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 60%, #6b73af 75%, #1E1381 88%);
+#bodyindex {
+  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 75%, #1E1381 93.5%);
   background-attachment: static;
 }
+
 .logo {
   height: 40px;
   color: #1E1381;
@@ -74,17 +75,9 @@ nav a:hover {
   border-radius: 13px;
 }
 
-#carte {
-  width: 0;
-  min-width: 100% !important;
-  border: none;
-  height: 400px;
-  padding: 0 50px;
-}
-
 .titre-intro {
   margin: 25px 0 120px;
-  font-size: 19.42px;
+  font-size: 22.42px;
   padding: 30px 60px 30px 140px;
   position: relative;
   left: -44px;
@@ -99,20 +92,181 @@ nav a:hover {
 
 .intro article {
   position: relative;
-  text-align: center;
+  display: block;
+  min-height: 400px;
+  margin-bottom: 100px;
 }
 
+.intro article img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  z-index: 1;
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+.intro article p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  margin: 0;
+  padding: 18px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 19.5px;
+}
+
+.cartes {
+  display: block;
+  padding: 0 20px;
+  max-width: 1000px;
+  margin: 250px auto 50px;
+}
+
+#carte,
+#diagramme,
+#gares {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 40px;
+  position: relative;
+  min-height: 400px;
+}
+
+#carte iframe,
+#diagramme iframe,
+#gares iframe {
+  width: 100% !important;
+  height: auto;
+  min-width: unset !important;
+  position: static;
+}
+
+/* --- Styles spécifiques à la page de détails d'une carte (explorer.php) --- */
+
+.carte-details {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.carte-details h1 {
+  font-size: 3em;
+  text-align: center;
+  color: #1E1381;
+  margin-bottom: 40px;
+}
+
+/* Conteneur principal pour la carte visuelle et les informations */
+.carte-visuelle-et-info {
+  display: flex;
+  /* ACTIVE LA MISE EN PAGE EN DEUX COLONNES */
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Styles pour la carte visuelle (Datawrapper iframe) */
+.carte-visuelle {
+  flex: 2;
+  /* 60% de la largeur */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 1.1 / 1;
+}
+
+/* L'iframe doit absolument remplir l'espace donné par aspect-ratio */
+.carte-visuelle iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+}
+
+/* Styles pour les informations textuelles */
+.carte-info {
+  flex: 1;
+  /* 40% de la largeur */
+  padding: 20px;
+  background-color: #f7d20f;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carte-info h2 {
+  font-size: 1.8em;
+  color: #1E1381;
+  margin-top: 0;
+  border-bottom: 2px solid #1E1381;
+  padding-bottom: 5px;
+}
+
+.carte-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carte-info li {
+  /* BACKGROUND À RETIRER SI VOUS N'AVEZ PAS train_icon.svg */
+  /* background: url('images/train_icon.svg') no-repeat left center; */
+  background-size: 16px;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.lien-officiel a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #1E1381;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Media query pour les petits écrans (tablettes/mobiles) */
+@media (max-width: 900px) {
+  .carte-visuelle-et-info {
+    flex-direction: column;
+  }
+
+  .carte-visuelle,
+  .carte-info {
+    flex: auto;
+    width: 100%;
+  }
+}
+
+/* --- FIN Styles spécifiques à la page de détails d'une carte --- */
 
 .a-propos {
   text-align: center;
-  background-color: #1E1381;
+
   color: white;
   padding: 40px 0 60px;
 }
 
 .a-propos h1 {
-  margin: 0;
+  margin: -40px 0;
   font-size: 36px;
+  background-color: #1E1381;
+  padding: 50px;
 }
 
 .equipe {
@@ -128,8 +282,8 @@ nav a:hover {
   width: 300px;
   height: 510px;
   text-align: center;
-  color: #1E1381;
-  background-color: white;
+  color: #1e1381;
+  background-color: rgba(30, 19, 129, 0.1);
   border-radius: 10px;
   padding: 20px;
   font-weight: normal;
@@ -182,61 +336,234 @@ main {
   width: 100%;
 }
 
-article {
-  position: relative;
+/* --- FOOTER (Pied de page) --- */
+
+footer {
+  background-color: #1E1381;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-section {
+  min-width: 150px;
+}
+
+.footer-logo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.copyright {
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f7d20f;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  line-height: 2;
+  font-weight: normal;
+}
+
+footer a:hover {
+  color: #f7d20f;
+}
+
+/* --- FIN FOOTER --- */
+
+#bodycontact {
+  background-color: #1E1381;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#bodycontact h1 {
+  color: white;
+  margin-top: 50px;
+
+}
+
+#bodycontact label {
+  color: white;
+
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+#bodycontact form {
+  width: 90%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+#bodycontact input[type="email"],
+#bodycontact textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+
+#bodycontact textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+#bodycontact button[type="submit"] {
+  background-color: #f7a900;
+  color: #1E1381;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#bodycontact button[type="submit"]:hover {
+  background-color: #ffc44d;
+}
+
+.recherche {
+  background-color: #1E1381;
+  height: 318px;
+  text-align: center;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.recherche h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.search-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Parfait pour centrer verticalement le contenu */
-
-  /* Laissez un peu de hauteur minimum pour l'image */
-  min-height: 400px;
-
-  /* On ajuste cette marge pour qu'elle ne soit pas excessive, car l'image est à l'intérieur maintenant */
-  margin-bottom: 100px;
-  padding: 20px;
-  overflow: hidden;
-}
-
-article img {
-  position: absolute;
-
-  /* On centre l'image dans l'article */
-  top: 50%;
-  left: 50%;
-  /* Nouveau : on utilise left: 50% */
-  transform: translate(-50%, -50%);
-  /* Nouveau : On utilise translate(-50%, -50%) pour le centrage parfait */
-
-  /* On augmente la taille de l'image pour qu'elle soit bien visible en fond (responsive) */
-  width: 120%;
-  max-width: 900px;
-  /* Optionnel : pour ne pas qu'elle soit gigantesque sur les très grands écrans */
-  height: auto;
-
-  object-fit: contain;
-  /* Assure que toute l'image est visible */
-  z-index: 0;
-  /* Parfait pour la mettre en arrière-plan */
-  pointer-events: none;
-  opacity: 0.3;
-  /* J'ai réduit un peu l'opacité pour que le texte soit plus lisible, comme dans votre maquette */
-}
-
-article p {
-  position: relative;
-  max-width: 600px;
   width: 90%;
-  z-index: 2;
-  padding: 18px;
-  border-radius: 8px;
-  margin: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.search-container input[type="text"] {
+  flex-grow: 1;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1.1em;
+  outline: none;
+}
+
+.search-button {
+  padding: 15px 20px;
+  border: none;
+  background-color: #f7a900;
+  color: #1E1381;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.search-button:hover {
+  background-color: #ffc44d;
+}
+
+.abonnements {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.abonnement-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-decoration: none;
+  color: #1E1381;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.abonnement-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-placeholder {
+  width: 150px;
+  height: 150px;
+  min-width: 150px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 20px;
+  border: 1px solid #f7d20f;
+}
+
+.image-placeholder iframe {
+  transform: scale(0.25);
+  transform-origin: top left;
+  width: 400%;
+  height: 400%;
+  margin-top: -100px;
+}
+
+.abonnement-info {
+  flex-grow: 1;
   text-align: center;
 }
 
-footer {
-  margin-top: 500px;
-height: 300px;
-color: white;
-font-size : 100px;
+.abonnement-info h2 {
+  font-size: 1.8em;
+  color: black;
+  margin: 0 0 5px 0;
+}
+
+.abonnement-info p {
+  font-size: 1.1em;
+  color: #6a6a6a;
+  margin: 0;
 }
